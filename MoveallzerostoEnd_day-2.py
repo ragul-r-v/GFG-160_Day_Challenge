@@ -11,16 +11,18 @@ if __name__ == "__main__":
     for num in arr:
         print(num, end=" ")
 
-
-
 class Solution:
-    def pushZerosToEnd(self, arr, n):
-        count = 0   # position to place next non-zero
-        
-        for i in range(n):
-            if arr[i] != 0:
-                arr[i], arr[count] = arr[count], arr[i]
-                count += 1
+    def pushZerosToEnd(self,array):
+        count=0
+        for i in range (len(array)):
+            if array[i] !=0:
+                array[i],array[count] = array[count],array[i]
+                count +=1
+                
+
+
+#End of code
+
 
 
 
